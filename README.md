@@ -1,6 +1,6 @@
 # Biblioteca Digital (Proyecto Final-Evaluacion con el Docente)
 
-**Realizado por :** [Julio Cisneros]  
+**Realizado por :** Julio Cisneros  
 **Objetivo del proyecto:**  
 Desarrollar un sistema de gestión de biblioteca digital en Go, con API RESTful y frontend web para administrar libros, usuarios y préstamos de manera sencilla y funcional.
 
