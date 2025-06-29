@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblioteca Digital Julio Cisneros</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>📚 Biblioteca Digital Julio Cisneros</h1>
+
+  <!-- Sección de registro de usuario antes del login -->
+  <section>
+    <h2>➕ Registrar Usuario</h2>
+    <input type="text" id="nombreUsuario" placeholder="Nombre de usuario">
+    <input type="password" id="claveUsuario" placeholder="Contraseña">
+    <button onclick="agregarUsuario()">Guardar Usuario</button>
+  </section>
+
+  <!-- Sección de login -->
+  <section>
+    <h2>🔐 Iniciar Sesión</h2>
+    <input type="text" id="loginName" placeholder="Nombre de usuario">
+    <input type="password" id="loginPass" placeholder="Contraseña">
+    <button onclick="iniciarSesion()">Ingresar</button>
+  </section>
+
+  <!-- Contenido protegido -->
+  <section id="contenido" style="display:none">
+    <h2>📖 Ver Datos</h2>
+    <button onclick="cargarLibros()">Ver Libros</button>
+    <button onclick="cargarUsuarios()">Ver Usuarios</button>
+    <button onclick="cargarPrestamos()">Ver Préstamos</button>
+
+    <h2>➕ Agregar Libro</h2>
+    <input type="text" id="titulo" placeholder="Título">
+    <input type="text" id="autor" placeholder="Autor">
+    <input type="number" id="stock" placeholder="Stock">
+    <button onclick="agregarLibro()">Guardar Libro</button>
+
+    <h2>➕ Registrar Préstamo</n2>
+    <input type="number" id="usuarioID" placeholder="ID del Usuario">
+    <input type="number" id="libroID" placeholder="ID del Libro">
+    <button onclick="registrarPrestamo()">Guardar Préstamo</button>
+
+    <h2>🗑️ Eliminar</h2>
+    <input type="number" id="idLibroEliminar" placeholder="ID del Libro">
+    <button onclick="eliminarLibro()">Eliminar Libro</button>
+
+    <input type="number" id="idUsuarioEliminar" placeholder="ID del Usuario">
+    <button onclick="eliminarUsuario()">Eliminar Usuario</button>
+
+    <input type="number" id="idPrestamoEliminar" placeholder="ID del Préstamo">
+    <button onclick="eliminarPrestamo()">Eliminar Préstamo</button>
+  </section>
+
+  <section id="resultado"></section>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
