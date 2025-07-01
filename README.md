@@ -1,16 +1,9 @@
 # Biblioteca Digital Julio Cisneros
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Go-1.22-blue?logo=go" alt="Go version" />
-  <img src="https://img.shields.io/badge/Backend-Go%20net%2Fhttp-blue" alt="Backend" />
-  <img src="https://img.shields.io/badge/API-RESTful-orange" alt="API RESTful" />
-  <img src="https://img.shields.io/badge/Frontend-HTML_CSS_JS-lightgrey" alt="Frontend" />
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="License" />
-</p>
-
 > **Proyecto Final – Evaluación con el Docente**
-> **Autor:** Julio Cisneros
-> **Objetivo:** Desarrollar un sistema web de gestión de biblioteca digital en Go, con API RESTful y frontend interactivo para administrar libros, usuarios y préstamos de forma clara y eficiente.
+>
+> Sistema en Go para gestionar una biblioteca digital: registra, consulta, edita y elimina libros y usuarios, y controla préstamos y devoluciones.
+> Basado en programación funcional, guarda datos en archivos JSON locales y ofrece un frontend dinámico en HTML y JavaScript.
 
 ---
 
@@ -27,12 +20,10 @@ Este proyecto integra los conocimientos de:
 
 ## Funcionalidades principales
 
-* **Gestión de libros:** CRUD completo (crear, leer, actualizar, eliminar).
-* **Gestión de usuarios:** Registro y listado.
-* **Préstamos y devoluciones:** Registrar y finalizar préstamos.
-* **Filtrado y búsqueda:** Por género o autor.
-* **Interfaz web interactiva:** Panel visual para operaciones de usuario.
-* **Serialización JSON:** Consumo y respuesta en formato JSON.
+* CRUD completo de libros y usuarios
+* Gestión de préstamos y devoluciones
+* Búsqueda por género o autor
+* Interfaz web interactiva
 
 ---
 
@@ -71,7 +62,7 @@ Este proyecto integra los conocimientos de:
 2. Clona el repositorio:
 
    ```bash
-   git clone <https://github.com/JulioC1335/-Sistema-de-Gesti-n-de-Libros-electr-nicos.git> biblioteca
+   git clone https://github.com/tu_usuario/tu_repositorio.git biblioteca
    cd biblioteca
    ```
 3. Inicializa el módulo Go y descarga dependencias:
@@ -97,8 +88,7 @@ Accede en tu navegador a: `http://localhost:8080`
 
 ## API RESTful
 
-Este proyecto incluye **11 servicios web**, superando el mínimo de 9 requeridos.
-Todas las rutas devuelven y aceptan datos en formato JSON.
+Este proyecto incluye **11 servicios web.**
 
 1. **GET** `/api/books` – Listar todos los libros
 2. **POST** `/api/books` – Crear un nuevo libro
@@ -120,10 +110,6 @@ Todas las rutas devuelven y aceptan datos en formato JSON.
 * **`style.css`**: Estilos modernos y responsive.
 * **`script.js`**: Lógica de interacción y llamadas a la API.
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/tu_usuario/tu_repo/screenshot.png" alt="Vista previa de la aplicación" width="600"/>
-</p>
-
 ---
 
 ## Tecnologías usadas
@@ -132,6 +118,5 @@ Todas las rutas devuelven y aceptan datos en formato JSON.
 * **Persistencia:** Archivos JSON (`data/`)
 * **Frontend:** HTML5, CSS3, JavaScript (Fetch API)
 * **Herramientas:** Visual Studio Code, Git/GitHub
-
 
 ---
