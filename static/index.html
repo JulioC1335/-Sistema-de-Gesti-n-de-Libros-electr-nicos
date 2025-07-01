@@ -1,0 +1,82 @@
+
+<!-- Página principal de la Biblioteca Digital: muestra secciones para ver, agregar, eliminar y gestionar datos -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos y título de la página -->
+  <meta charset="UTF-8">
+  <title>Biblioteca Digital</title>
+  <!-- Enlace a la hoja de estilos para diseño -->
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- Título principal de la aplicación -->
+  <h1>📚 Biblioteca Digital</h1>
+
+  <!-- Sección para visualizar datos existentes -->
+  <section>
+    <h2>📖 Ver Datos</h2>
+    <!-- Botones que llamarán a funciones JS para cargar datos desde la API -->
+    <button onclick="cargarLibros()">Ver Libros</button>
+    <button onclick="cargarUsuarios()">Ver Usuarios</button>
+    <button onclick="cargarPrestamos()">Ver Préstamos</button>
+  </section>
+
+  <!-- Sección para agregar un nuevo libro -->
+  <section>
+    <h2>➕ Agregar Libro</h2>
+    <!-- Campos de entrada: título, autor y stock -->
+    <input type="text" id="titulo" placeholder="Título">
+    <input type="text" id="autor" placeholder="Autor">
+    <input type="number" id="stock" placeholder="Stock">
+    <!-- Botón que invoca la función JS para enviar el nuevo libro a la API -->
+    <button onclick="agregarLibro()">Guardar Libro</button>
+  </section>
+
+  <!-- Sección para registrar un nuevo usuario -->
+  <section>
+    <h2>➕ Registrar Usuario</h2>
+    <!-- Campo de entrada para el nombre del usuario -->
+    <input type="text" id="nombreUsuario" placeholder="Nombre del Usuario">
+    <!-- Botón que ejecuta la función JS para crear al usuario -->
+    <button onclick="agregarUsuario()">Guardar Usuario</button>
+  </section>
+
+  <!-- Sección para crear un nuevo préstamo -->
+  <section>
+    <h2>➕ Registrar Préstamo</h2>
+    <!-- Campos de entrada: ID de usuario y ID de libro -->
+    <input type="number" id="usuarioID" placeholder="ID del Usuario">
+    <input type="number" id="libroID" placeholder="ID del Libro">
+    <!-- Botón que llama a la función JS para registrar el préstamo -->
+    <button onclick="registrarPrestamo()">Guardar Préstamo</button>
+  </section>
+
+  <!-- Sección para finalizar (devolver) un préstamo -->
+  <section>
+    <h2>✅ Finalizar Préstamo</h2>
+    <!-- Campo de entrada para el ID del préstamo a finalizar -->
+    <input type="number" id="loanID" placeholder="ID del Préstamo">
+    <!-- Botón que marca el préstamo como devuelto -->
+    <button onclick="finalizarPrestamo()">Marcar como devuelto</button>
+  </section>
+
+  <!-- Sección para eliminar libros o usuarios existentes -->
+  <section>
+    <h2>🗑️ Eliminar</h2>
+    <!-- Entrada y botón para eliminar un libro por su ID -->
+    <input type="number" id="idLibroEliminar" placeholder="ID del Libro">
+    <button onclick="eliminarLibro()">Eliminar Libro</button>
+    <!-- Entrada y botón para eliminar un usuario por su ID -->
+    <input type="number" id="idUsuarioEliminar" placeholder="ID del Usuario">
+    <button onclick="eliminarUsuario()">Eliminar Usuario</button>
+  </section>
+
+  <!-- Contenedor donde se mostrarán los resultados de las peticiones -->
+  <section id="resultado"></section>
+
+  <!-- Importar el script JavaScript con las funciones que llaman a la API -->
+  <script src="/static/script.js"></script>
+</body>
+</html>

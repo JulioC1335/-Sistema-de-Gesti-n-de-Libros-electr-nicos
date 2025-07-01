@@ -1,0 +1,52 @@
+/* Este archivo contiene los estilos principales de la aplicación Biblioteca Digital */
+
+/* Estilos generales del cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;    /* Fuente sans-serif, legible y común */
+  background-color: #f0f2f5;          /* Color de fondo suave para menor fatiga visual */
+  padding: 20px;                      /* Espacio alrededor del contenido */
+}
+
+/* Estilo para el título principal */
+h1 {
+  color: #333;                        /* Texto oscuro para buen contraste */
+}
+
+/* Cada sección se ve como una tarjeta o panel */
+section {
+  background-color: white;            /* Fondo blanco para destacar contenido */
+  padding: 15px;                      /* Espacio interno cómodo */
+  border-radius: 10px;                /* Bordes redondeados para aspecto moderno */
+  margin-bottom: 20px;                /* Separación entre secciones */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+}
+
+/* Estilos compartidos para inputs y botones */
+input,
+button {
+  margin: 5px 5px 10px 0;             /* Espaciado entre elementos de formulario */
+  padding: 8px;                       /* Relleno interno para clic y tipeo cómodo */
+}
+
+/* Botones con estilo distintivo */
+button {
+  background-color: #007bff;          /* Azul vivo para llamar la atención */
+  color: white;                       /* Texto blanco para buen contraste */
+  border: none;                       /* Sin borde predeterminado */
+  border-radius: 5px;                 /* Bordes ligeramente redondeados */
+  cursor: pointer;                    /* Cambia el cursor al pasar por encima */
+}
+
+/* Estado hover del botón para feedback visual */
+button:hover {
+  background-color: #0056b3;          /* Azul más oscuro cuando el usuario interactúa */
+}
+
+/* Estilo del contenedor de resultados */
+#resultado {
+  white-space: pre-wrap;              /* Conserva saltos de línea en el texto */
+  background: #f7f7f7;                /* Fondo gris claro para diferenciar */
+  border: 1px solid #ddd;             /* Borde suave para delimitar el área */
+  padding: 10px;                      /* Espacio interno cómodo */
+  border-radius: 5px;                 /* Bordes redondeados leves */
+}
